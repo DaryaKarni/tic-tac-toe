@@ -22,7 +22,7 @@ class Image(QWidget):
         self.playerButton = QPushButton()
         self.playerButton.setContentsMargins(150, 200, 150, 0)
         self.playerButton.setFixedSize(100,25)
-        self.playerButton.setText("Player1")
+        self.playerButton.setText("Player Х")
 
         self.lineEdit = QLineEdit()
         self.lineEdit.setFixedWidth(100)
