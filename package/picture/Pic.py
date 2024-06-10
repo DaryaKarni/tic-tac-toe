@@ -45,7 +45,10 @@ class Image(QWidget):
         self.file = QFileDialog()
         self.fileName = self.file.getOpenFileName()[0]
         self.pixmap = QPixmap(self.fileName)
-        self.pixmap.scaled(300,300)
+        picWidth = self.picture.width()
+        picHeight = self.picture.height()
+
+        self.pixmap = self.pixmap.scaled(picWidth, picHeight, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
         self.picture.setPixmap(self.pixmap)
     
     def LoadButtonClicked(self, handler):
