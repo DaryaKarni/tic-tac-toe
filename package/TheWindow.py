@@ -27,7 +27,7 @@ class TheWindow(QMainWindow):
         self.layout.addWidget(self.gameGrid, Qt.AlignmentFlag.AlignCenter)
 
         self.rightImage = Image()
-        self.rightImage.playerButton.setText("Player2")
+        self.rightImage.playerButton.setText("Player O")
         self.layout.addStretch()
         self.layout.addWidget(self.rightImage)
 
