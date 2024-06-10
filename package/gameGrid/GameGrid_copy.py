@@ -21,7 +21,7 @@ class GameGrid(QLabel):
         self.painter.drawLine(self.width // 3 + 15, 0, self.width // 3 + 15, self.height + 25)
         self.painter.drawLine(2 *self.width // 3 + 20, 0, 2 * self.width // 3 + 20, self.height + 25)
         self.painter.drawLine(0, self.height // 3 + 15, self.width + 25, self.height // 3 + 15)
-        self.painter.drawLine(0, 2 * self.height // 3 + 15, self.width + 25, 2 * self.height // 3 + 15)
+        self.painter.drawLine(0, 2 * self.height // 3 + 20, self.width + 25, 2 * self.height // 3 + 20)
         self.setPixmap(self.canvas)
         self.width = 520
         self.height = 520
